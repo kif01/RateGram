@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/color6"
+    tools:context="com.home.khalil.nosedive.RatingActivity">
+
+    <TextView
+        android:id="@+id/rating_current_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Khalil"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="70dp"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/rating_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How much would you like to"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/rating_current_user_name"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/rating_image"
+        android:layout_width="225dp"
+        android:layout_height="225dp"
+        app:civ_border_width="3dp"
+        app:civ_border_color="@android:color/white"
+        android:src="@drawable/image"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/rating_text" />
+
+    <LinearLayout
+        android:id="@+id/rating_layout"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rating_image"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/rating_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rate"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:layout_below="@+id/rating_image"
+                android:layout_centerHorizontal="true" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rating_other_user_name"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/rating_image"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/rating_text2"
+                android:text="this new User" />
+        </LinearLayout>
+
+    <RatingBar
+        android:id="@+id/rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rating_layout"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

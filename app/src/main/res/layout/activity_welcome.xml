@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/animation_list"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context="com.home.khalil.nosedive.WelcomeActivity">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+
+        android:src="@drawable/img"
+
+        />
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:id="@+id/welcome_icon"
+        android:src="@drawable/ic_icon"
+        android:layout_below="@+id/icon"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="50dp"
+        android:textSize="28sp"
+        android:id="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold"
+
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="20dp"
+        android:text="See your rate and start \nrating people around you."
+        />
+
+    <FrameLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+
+        android:layout_below="@+id/text"
+        android:layout_centerHorizontal="true">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+
+
+            app:fabSize="normal"
+            android:src="@drawable/ic_scan"
+            android:id="@+id/fab_start" />
+    </FrameLayout>
+
+
+
+
+
+    <!--<android.support.design.widget.FloatingActionButton
+
+
+
+        android:id="@+id/fab_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_scan"
+        app:fabSize="mini"
+        />-->
+
+
+
+
+</RelativeLayout>

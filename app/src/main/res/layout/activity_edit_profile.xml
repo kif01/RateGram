@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color6"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.home.khalil.nosedive.FirstTimeActivity"
+    >
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:id="@+id/_edit_profile_title"
+            android:text="Edit Profile"
+            />
+
+        <ImageButton
+            android:layout_marginTop="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_done"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/edit_profile_submit"
+            android:background="@drawable/circular_shape"
+            android:layout_marginRight="10dp"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:id="@+id/view"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/white"
+            android:layout_below="@+id/edit_profile_submit"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="175dp"
+            android:layout_below="@+id/view"
+
+            android:id="@+id/edit_profile_image"
+            app:civ_border_color="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/default_profile_pic"
+            android:scaleType="centerCrop"
+            app:civ_border_width="3dp"
+            android:layout_height="175dp" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="16sp"
+            android:layout_marginTop="25dp"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/edit_text1"
+            android:layout_below="@+id/edit_profile_image"
+            />
+
+        <EditText
+
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/edit_text1"
+            android:backgroundTint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bio"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/edit_text2"
+            android:layout_below="@+id/edit_name"
+            />
+
+
+
+        <EditText
+            android:id="@+id/edit_bio"
+            android:layout_width="match_parent"
+            android:backgroundTint="@android:color/white"
+            android:layout_below="@+id/edit_text2"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/edit_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:paddingBottom="10dp"
+            android:visibility="visible"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/edit_bio"
+            android:layout_alignParentEnd="true"
+            android:paddingRight="16dp"
+            android:layout_marginRight="20dp" />
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
+

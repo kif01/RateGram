@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/color5"
+    android:layout_height="match_parent"
+    tools:context="com.home.khalil.nosedive.UserProfileActivity">
+
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:layout_width="250dp"
+        android:src="@drawable/image"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        app:civ_border_color="#ffffff"
+        android:id="@+id/profile_image"
+        app:civ_border_width="3dp"
+        android:layout_height="250dp" />
+
+
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Khalil Faraj"
+
+        android:textSize="22sp"
+
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/profile_image"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.4"
+
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/profile_rating1"
+        android:layout_below="@+id/profile_name"
+        android:textSize="65sp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/profile_rated_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_toLeftOf="@+id/profile_rating1"
+        android:layout_below="@id/profile_name"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="70dp"
+        android:drawableRight="@drawable/ic_people"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/profile_rating1"
+        android:textSize="25sp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/profile_rating2"
+
+
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/white"
+        android:text="52"
+        android:layout_below="@+id/profile_name"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@drawable/ic_half_star"
+        android:layout_marginTop="70dp"
+        android:text="50"
+        android:id="@+id/profile_user_rate"
+        android:layout_toRightOf="@+id/profile_rating1"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@id/profile_name"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="3dp"
+        android:id="@+id/view1"
+        android:layout_below="@id/profile_user_rate"
+        android:background="#EEEEEE"
+        />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile_bio"
+        android:textSize="16sp"
+
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:layout_below="@id/view1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:text="Masters Student at the University of Southampton. I love basketball, tennis, and swimming. Big passion for Entrepreneurship."
+        />
+
+    <FrameLayout
+
+        android:layout_width="95dp"
+       android:layout_marginBottom="10dp"
+        android:id="@+id/frame1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="95dp">
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_home"
+            android:id="@+id/go_home"
+            android:layout_margin="9dp"
+
+
+
+            />
+    </FrameLayout>
+
+
+</RelativeLayout>

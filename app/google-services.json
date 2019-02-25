@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "420251819992",
+    "firebase_url": "https://nosedive-a730d.firebaseio.com",
+    "project_id": "nosedive-a730d",
+    "storage_bucket": "nosedive-a730d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:420251819992:android:4ac196c4aaf9f6e8",
+        "android_client_info": {
+          "package_name": "com.home.khalil.nosedive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "420251819992-fcn1ijsa7ogpc4o2oe9t6l3sj1h1q1cu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.home.khalil.nosedive",
+            "certificate_hash": "e1da57b2ad197c2182bb839877139d090b3dcbd2"
+          }
+        },
+        {
+          "client_id": "420251819992-ll0l9720htd1e92t0hse64ohj14v1da1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTZPoa93wB1i7s5NWqQR9Jd-DqcRO_KcI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "420251819992-ll0l9720htd1e92t0hse64ohj14v1da1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

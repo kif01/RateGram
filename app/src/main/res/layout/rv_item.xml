@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/post_user_pic"
+        android:layout_width="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/default_profile_pic"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:id="@+id/post_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Khalil Faraj"
+        android:layout_toRightOf="@+id/post_user_pic"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.75"
+        android:id="@+id/post_user_rate"
+        android:layout_toRightOf="@+id/post_user_name"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="42dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/post_user_name"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/ic_star4"
+        android:layout_marginTop="20dp"
+        />
+    
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/post_text"
+        android:textSize="16sp"
+        android:layout_below="@+id/post_user_name"
+        android:layout_toRightOf="@+id/post_user_pic"
+        android:layout_marginLeft="10dp"
+        android:text="Hello had a great day today"
+        />
+    <ImageView
+        android:layout_below="@+id/post_text"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/post_user_pic"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/post_image"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/image"
+        android:layout_height="200dp" />
+
+    <RatingBar
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/post_image"
+        android:layout_toRightOf="@+id/post_user_pic"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/post_rating"
+        android:isIndicator="false"
+        android:layout_marginTop="5dp"
+        android:progressTint="#ab47bc"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"
+        android:layout_below="@+id/post_rating"
+       />
+
+</RelativeLayout>
